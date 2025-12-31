@@ -1,0 +1,50 @@
+body{margin:0;background:#0b0b09;color:#e8dfc8;font-family:'Poppins',Arial;}
+h1,h2,h3{font-family:'Playfair Display',serif;letter-spacing:.3px;}
+
+/* HEADER */
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:16px 26px;background:#000;border-bottom:1px solid #b19042;position:sticky;top:0;z-index:50;}
+.logo img{height:38px;}
+nav a{margin-left:18px;text-decoration:none;color:#e8dfc8;transition:.3s;}
+nav a:hover{color:#ffdf8a;}
+
+/* HERO */
+.hero{padding:120px 24px 100px;text-align:center;background:radial-gradient(circle at 50% 20%,#2a2e1c,#0b0b09 70%);}
+.hero h1{font-size:36px;color:#ffde9b;}
+.hero p{max-width:760px;margin:12px auto;color:#e9dfbb;line-height:1.6;}
+
+/* BUTTONS */
+.btn{display:inline-block;margin-top:14px;padding:11px 20px;border-radius:12px;text-decoration:none;font-weight:600;border:1px solid #b19042;transition:.3s;}
+.primary{background:#b19042;color:#000;}
+.btn:hover{box-shadow:0 0 18px #ffdf8a55;background:#ffdf8a;color:#000;}
+.btn.full{width:100%;}
+.card a.btn{background:#b19042;color:#000!important;border:1px solid #c9aa63;}
+.card a.btn:hover{background:#ffdf8a;box-shadow:0 0 14px #ffdf8a55;}
+
+/* SECTIONS */
+.section{padding:70px 24px;max-width:1050px;margin:auto;}
+.section.alt{background:#0f0f0d;}
+.title{text-align:center;color:#ffdf9a;font-size:26px;}
+.divider{width:80px;height:2px;margin:10px auto 22px;background:linear-gradient(90deg,#b19042,#ffdf8a,#b19042);border-radius:3px;}
+
+/* PRODUCTS */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:22px;}
+.card{background:#12120f;border-radius:18px;padding:16px;border:1px solid #b1904233;box-shadow:0 6px 18px #0007;}
+.card img{width:100%;border-radius:14px;border:1px solid #c9aa63;}
+.badges span{display:inline-block;padding:5px 9px;border-radius:8px;border:1px solid #c9aa63;margin-right:6px;color:#ffe7a8;}
+
+/* ORDER FORM */
+.order-wrapper{max-width:780px;margin:auto;}
+.order-box{background:#12120f;padding:22px;border-radius:18px;border:1px solid #b1904233;box-shadow:0 8px 24px #0007;}
+.form-row.two{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.form-row.three{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;}
+@media(max-width:700px){
+  .form-row.two,.form-row.three{grid-template-columns:1fr;}
+}
+.field label{color:#ffdf9a;font-weight:600;}
+.field input,.field select,.field textarea{width:100%;margin-top:6px;padding:10px;border-radius:12px;border:1px solid #c9aa63;background:#0f0f0d;color:#ffefc1;}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;box-shadow:0 0 12px #ffdf8a55;}
+
+/* TRUST + FOOTER */
+.trust-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;}
+.trust-card{background:#12120f;padding:14px;border-radius:12px;border:1px solid #b1904233;color:#ffecb5;}
+footer{text-align:center;padding:20px;background:#000;color:#ffdf8a;margin-top:40px;}
