@@ -37,6 +37,21 @@ nav a:hover{color:#ffdf8a;}
 .order-box{background:#12120f;padding:22px;border-radius:18px;border:1px solid #b1904233;box-shadow:0 8px 24px #0007;}
 .form-row.two{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
 .form-row.three{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;}
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.benefit-card {
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 18px;
+  padding: 18px 16px;
+  line-height: 1.5;
+  min-height: 150px;
+}
 @media(max-width:700px){
   .form-row.two,.form-row.three{grid-template-columns:1fr;}
 }
