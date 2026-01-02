@@ -62,3 +62,22 @@ nav a:hover{color:#ffdf8a;}
 .trust-card{background:#12120f;padding:14px;border-radius:12px;border:1px solid #b1904233;color:#ffecb5;}
 
 footer{text-align:center;padding:20px;background:#000;color:#ffdf8a;margin-top:40px;}
+/* FORCE GOLD BUTTON STYLE (Fix blue link issue) */
+.card a.btn{
+  display:inline-block;
+  background:#c9a64b;
+  color:#000 !important;
+  border:1px solid #caa24d;
+  padding:9px 18px;
+  border-radius:12px;
+  font-weight:600;
+  text-decoration:none !important;
+  box-shadow:0 6px 18px rgba(201,166,75,.35);
+  transition:.25s;
+}
+
+.card a.btn:hover{
+  background:#ffdf8a;
+  color:#000 !important;
+  box-shadow:0 10px 26px rgba(201,166,75,.55);
+}
