@@ -114,27 +114,36 @@ nav a:hover{color:#ffdf8a;}
 }
 .benefit-card {
   position: relative;
-  border: 1px solid #c9aa63;
+  border: 1px solid rgba(201,170,99,.55);
   border-radius: 18px;
   padding: 18px 16px;
-  line-height: 1.5;
+  line-height: 1.55;
   min-height: 150px;
+  color:#ffefc1;
 
-  /* Texture inside card */
-  background:
-    url("health-texture.png") center/cover no-repeat,
-    rgba(0, 0, 0, 0.45);
-
-  box-shadow: 0 16px 32px rgba(0,0,0,0.55);
+  /* Visible luxury texture */
+  background: #0e0d0b;
+  box-shadow: 0 16px 32px rgba(0,0,0,.55);
+  overflow: hidden;
 }
+
 .benefit-card::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("health-texture.png") center/cover no-repeat;
-  opacity: 0.25;     /* adjust texture strength */
   border-radius: inherit;
+
+  /* texture image inside each box */
+  background: url("health-texture.png") center/160% no-repeat;
+  opacity: 0.35;        /* increase/decrease texture strength */
+  mix-blend-mode: overlay; 
   pointer-events: none;
+}
+
+.benefit-card:hover {
+  border-color:#d4b264;
+  box-shadow:0 26px 45px rgba(0,0,0,.7);
+  transform: translateY(-4px);
 }
 @media(max-width:700px){
   .form-row.two,.form-row.three{grid-template-columns:1fr;}
