@@ -291,6 +291,27 @@ document.getElementById("orderForm").addEventListener("submit", function(e){
   window.open(`https://wa.me/917568605896?text=${encodeURIComponent(msg)}`,"_blank");
 });
 </script>
+  <script>
+function enroll(course, price) {
+  const msg =
+`🎓 *Mushroom Training Enrollment Request*
+
+📌 Course: ${course}
+💰 Fee: ₹${price}
+
+Please book my slot.
+My details:
+• Name:
+• City:
+• Preferred Mode: Online / Offline
+• Preferred Date:`;
+
+  window.open(
+    `https://wa.me/917568605896?text=${encodeURIComponent(msg)}`,
+    `_blank`
+  );
+}
+  </script>
 
 </body>
 </html>
