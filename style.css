@@ -127,6 +127,15 @@ nav a:hover{color:#ffdf8a;}
 
   box-shadow: 0 16px 32px rgba(0,0,0,0.55);
 }
+.benefit-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("health-texture.png") center/cover no-repeat;
+  opacity: 0.25;     /* adjust texture strength */
+  border-radius: inherit;
+  pointer-events: none;
+}
 @media(max-width:700px){
   .form-row.two,.form-row.three{grid-template-columns:1fr;}
 }
