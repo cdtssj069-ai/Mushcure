@@ -6,7 +6,7 @@
 
   <title>Mushcure — Premium Organic Oyster Mushrooms | Farm Fresh</title>
 
-  <meta name="description" content="Mushcure — Premium organic oyster mushrooms. Farm-fresh, chemical-free, hygienically cultivated mushrooms. Order fresh and mixed mushroom harvest.">
+  <meta name="description" content="Mushcure — Premium organic oyster mushrooms. Farm-fresh, chemical-free, hygienically cultivated mushrooms. Order fresh and dried oyster mushrooms.">
   <meta name="keywords" content="Mushcure, oyster mushrooms, organic mushrooms, mushroom farm, mushroom delivery, fresh mushrooms India">
   <meta name="author" content="Mushcure Farm">
 
@@ -16,7 +16,6 @@
 
 <body>
 
-<!-- HEADER -->
 <header class="topbar">
   <div class="logo">
     <img src="logo.png" alt="Mushcure Logo">
@@ -26,7 +25,6 @@
     <a href="#home">Home</a>
     <a href="#products">Products</a>
     <a href="#order">Order</a>
-    <a href="#about">About</a>
     <a href="#benefits">Benefits</a>
     <a href="#quality">Quality</a>
     <a href="#delivery">Delivery</a>
@@ -34,8 +32,6 @@
   </nav>
 </header>
 
-
-<!-- HERO -->
 <section id="home" class="hero">
   <h1>Premium • Organic • Farm-Fresh Mushrooms</h1>
   <p>
@@ -45,8 +41,6 @@
   <a href="#products" class="btn primary">Shop Now</a>
 </section>
 
-
-<!-- PRODUCTS -->
 <section id="products" class="section">
   <h2 class="title">Our Products</h2>
   <div class="divider"></div>
@@ -92,14 +86,11 @@
   </div>
 </section>
 
-
-<!-- ORDER FORM -->
 <section id="order" class="section alt">
   <h2 class="title">Place an Order</h2>
   <div class="divider"></div>
 
   <div class="order-wrapper">
-
     <form id="orderForm" class="order-box">
 
       <div class="form-row two">
@@ -120,7 +111,7 @@
           <select id="product">
             <option>White Oyster Mushrooms</option>
             <option>White Oyster Mushrooms Dried</option>
-            <option>White Oyster Mushroom Powder</option>
+            <option>Oyster Mushroom Powder</option>
           </select>
         </div>
 
@@ -152,26 +143,9 @@
 
       <button type="submit" class="btn primary full">Confirm Order</button>
     </form>
-
   </div>
 </section>
 
-
-<!-- ABOUT -->
-<section id="about" class="section">
-  <h2 class="title">Our Farm Philosophy</h2>
-  <div class="divider"></div>
-
-  <p class="story">
-    At Mushcure, we believe food grown with patience and integrity carries a
-    different kind of purity. Our mushrooms are cultivated in clean, controlled
-    environments — harvested fresh and handled with care so every pack reflects
-    honesty, health and nature’s goodness.
-  </p>
-</section>
-
-
-<!-- HEALTH BENEFITS -->
 <section id="benefits" class="section">
   <h2 class="title">Oyster Mushroom — Health Benefits for the Body</h2>
   <div class="divider"></div>
@@ -181,280 +155,20 @@
     <div class="benefit-card"><strong>1. High-Quality Plant Protein</strong><br>Supports muscle growth • Great for vegetarians</div>
     <div class="benefit-card"><strong>2. Boosts Immunity</strong><br>Beta-glucans strengthen immune response</div>
     <div class="benefit-card"><strong>3. Supports Heart Health</strong><br>Lowers bad cholesterol • Stabilizes BP</div>
+
     <div class="benefit-card"><strong>4. Good for Digestion</strong><br>High fiber • Improves gut health</div>
     <div class="benefit-card"><strong>5. Controls Blood Sugar</strong><br>Low glycemic index • Diabetic-friendly</div>
     <div class="benefit-card"><strong>6. Rich in Vitamins</strong><br>Vitamin-B complex • Energy & metabolism</div>
+
     <div class="benefit-card"><strong>7. Strong Bones & Teeth</strong><br>Calcium + Vitamin-D support</div>
     <div class="benefit-card"><strong>8. Powerful Antioxidants</strong><br>Protects cells • Reduces inflammation</div>
     <div class="benefit-card"><strong>9. Weight-Loss Friendly</strong><br>Low calories • High fiber • Keeps you full</div>
+
     <div class="benefit-card"><strong>10. Improves Brain Function</strong><br>Supports memory • Reduces fatigue</div>
 
   </div>
 </section>
 
-
-<!-- QUALITY -->
-<section id="quality" class="section alt">
-  <h2 class="title">Quality & Trust</h2>
-  <div class="divider"></div>
-
-  <div class="trust-grid">
-    <div class="trust-card">🌿 100% Chemical-Free Cultivation</div>
-    <div class="trust-card">🧪 Hygienic Processing & Handling</div>
-    <div class="trust-card">🥗 High-Protein & Nutrient Rich</div>
-    <div class="trust-card">🚚 Fresh Farm-to-Home Delivery</div>
-  </div>
-</section>
-
-
-<!-- DELIVERY -->
-<section id="delivery" class="section">
-  <h2 class="title">Packaging & Delivery</h2>
-  <div class="divider"></div>
-
-  <ul class="list">
-    <li>📦 Sealed hygienic eco-safe packaging</li>
-    <li>❄️ Freshness-protected storage</li>
-    <li>🚚 Local delivery available</li>
-    <li>🕒 Best consumed within 2–3 days</li>
-  </ul>
-</section>
-
-
-<!-- CONTACT -->
-<section id="contact" class="section alt">
-  <h2 class="title">Contact & Orders</h2>
-  <div class="divider"></div>
-
-  <p>📍 Mushcure Farm — India</p>
-  <p>📞 +91 75686 05896</p>
-  <p>📧 mushcurefarm@gmail.com</p>
-
-  <a class="btn primary" href="https://wa.me/917568605896">Chat on WhatsApp</a>
-</section>
-
-
-<!-- FOOTER -->
-<footer>
-  © 2025 Mushcure Farm — Premium Organic Mushrooms
-</footer>
-
-
-<!-- WHATSAPP ORDER SCRIPT -->
-<script>
-document.getElementById("orderForm").addEventListener("submit", function(e){
-  e.preventDefault();
-
-  let name = document.getElementById("name").value;
-  let phone = document.getElementById("phone").value;
-  let product = document.getElementById("product").value;
-  let weight = document.getElementById("weight").value;
-  let qty = document.getElementById("qty").value;
-  let address = document.getElementById("address").value;
-  let note = document.getElementById("note").value;
-
-  let msg =
-    `🛒 *Mushcure Order*\n\n` +
-    `👤 Name: ${name}\n` +
-    `📞 Phone: ${phone}\n\n` +
-    `🍄 Product: ${product}\n` +
-    `⚖️ Pack Size: ${weight}\n` +
-    `🔢 Quantity: ${qty}\n\n` +
-    `📍 Delivery Address:\n${address}\n\n` +
-    `📝 Notes: ${note || "None"}`;
-
-  window.open(
-    `https://wa.me/917568605896?text=${encodeURIComponent(msg)}`,
-    `_blank`
-  );
-});
-</script>
-
-</body>
-</html>  <p>
-    Hand-grown with care at Mushcure Farm — nurtured in clean environments,
-    harvested fresh and delivered with honesty and discipline.
-  </p>
-  <a href="#products" class="btn primary">Shop Now</a>
-</section>
-
-<section id="products" class="section">
-  <h2 class="title">Our Products</h2>
-  <div class="divider"></div>
-
-  <div class="grid">
-
-    <div class="card">
-      <img src="pink-oyster.jpg" alt="Pink Oyster Mushrooms">
-      <h3>White Oyster Mushrooms</h3>
-      <p>Vibrant gourmet variety • Rich flavour • Freshly harvested</p>
-      <div class="badges">
-        <span>🌿 Organic</span>
-        <span>⭐ Premium Grade</span>
-      </div>
-      <strong>₹40 / 100g</strong>
-      <a class="btn" href="#order">Order Now</a>
-    </div>
-
-    <div class="card">
-      <img src="white-oyster.jpg" alt="White Oyster Mushrooms">
-      <h3>White Oyster Mushrooms dried</h3>
-      <p>Soft texture • High protein • Clean & farm-fresh</p>
-      <div class="badges">
-        <span>🧪 Hygienic</span>
-        <span>🥗 Fresh Daily</span>
-      </div>
-      <strong>₹250 / 100g</strong>
-      <a class="btn" href="#order">Order Now</a>
-    </div>
-
-    <div class="card">
-      <img src="fresh-harvest.jpg" alt="Mixed Mushroom Harvest">
-      <h3>Oyster Mushroom Powder</h3>
-      <p>Hand-picked selection • Ideal for home cooking</p>
-      <div class="badges">
-        <span>🚚 Same-Day Harvest</span>
-        <span>💪 Nutrient Rich</span>
-      </div>
-      <strong>₹2500 / 1kg</strong>
-      <a class="btn" href="#order">Order Now</a>
-    </div>
-
-  </div>
-</section>
-
-<section id="order" class="section alt">
-  <h2 class="title">Place an Order</h2>
-  <div class="divider"></div>
-
-  <div class="order-wrapper">
-
-    <form id="orderForm" class="order-box">
-
-      <div class="form-row two">
-        <div class="field">
-          <label>Customer Name</label>
-          <input type="text" id="name" required>
-        </div>
-
-        <div class="field">
-          <label>Phone Number</label>
-          <input type="text" id="phone" required>
-        </div>
-      </div>
-
-      <div class="form-row three">
-        <div class="field">
-          <label>Select Product</label>
-          <select id="product">
-            <option>White Oyster Mushrooms</option>
-            <option>White Oyster Mushrooms Dried</option>
-            <option>White Oyster Mushroom Powder</option>
-          </select>
-        </div>
-
-        <div class="field">
-          <label>Pack Size</label>
-          <select id="weight">
-            <option>100g</option>
-            <option>250g</option>
-            <option>500g</option>
-            <option>1kg</option>
-          </select>
-        </div>
-
-        <div class="field">
-          <label>Quantity</label>
-          <input type="number" id="qty" value="1" min="1">
-        </div>
-      </div>
-
-      <div class="field">
-        <label>Delivery Address</label>
-        <textarea id="address" rows="3" required></textarea>
-      </div>
-
-      <div class="field">
-        <label>Additional Notes (optional)</label>
-        <textarea id="note" rows="2"></textarea>
-      </div>
-
-      <button type="submit" class="btn primary full">Confirm Order</button>
-    </form>
-
-  </div>
-</section>
-
-<section id="about" class="section">
-  <h2 class="title">Our Farm Philosophy</h2>
-  <div class="divider"></div>
-
-  <p class="story">
-    At Mushcure, we believe food grown with patience and integrity carries a
-    different kind of purity. Our mushrooms are cultivated in clean, controlled
-    environments — harvested fresh and handled with care so every pack reflects
-    honesty, health and nature’s goodness.
-    <section id="about" class="section">
-  <h2 class="title">Oyster Mushroom – Health Benefits for the Body</h2>
-  <div class="divider"></div>
-    <p class="story">
-      <div class="trust-grid">
-<div class="trust-card">1. High-Quality Plant Protein<br>
-Rich source of protein for vegetarians<br>
-Helps in muscle growth and repair<br>
-Good alternative to meat<br></div>
-      
-<div class="trust-card">2. Boosts Immunity
-Contains beta-glucans that strengthen the immune system
-Helps the body fight infections and illnesses<br></div>
-<div class="trust-card">3. Heart Health<br>
-Naturally lowers bad cholesterol (LDL)
-Supports healthy blood pressure
-Reduces risk of heart disease<br></div>
-<div class="trust-card">4. Good for Digestion<br>
-High in dietary fiber<br>
-Improves digestion and gut health<br>
-Prevents constipation<br></div>
-<div class="trust-card">5. Controls Blood Sugar
-Low glycemic index
-Helps regulate blood sugar levels
-Very beneficial for diabetic patients<br></div>
-<div class="trust-card">6. Rich in Vitamins
-Contains:<br>
-Vitamin B1 (Thiamine) – brain and nerve health<br>
-Vitamin B2 (Riboflavin) – energy production<br>
-Vitamin B3 (Niacin) – improves metabolism<br>
-Vitamin B5 & B6 – hormone balance and immunity<br></div>
-<div class="trust-card">7. Strong Bones & Teeth
-Good source of calcium, phosphorus, and vitamin D
-Supports bone density
-Helpful for elderly people<br></div>
-<div class="trust-card">8. Antioxidant Properties
-Protects body cells from damage
-Slows aging process
-Reduces inflammation<br></div>
-<div class="trust-card">9. Weight Loss Friendly
-Low in calories
-High in fiber and protein
-Keeps you full for longer<br></div>
-<div class="trust-card">10. Improves Brain Function<br>
-Supports memory and concentration<br>
-Reduces mental fatigue and stress<br></div>
-<div class="trust-card">11. Anti-Cancer Potential
-Contains compounds that may help slow cancer cell growth
-Supports overall cellular health<br></div>
-<div class="trust-card">12. Improves Skin & Hair Health
-Rich in zinc, selenium, and antioxidants
-Promotes healthy skin and hair growth<br></div>
-<div class="trust-card">13. Detoxifies the Body
-Helps remove toxins from the body
-Supports liver function<br></div>
-<div class="trust-card">14. Safe for All Ages
-Suitable for children, adults, elderly
-Easy to digest<br></div>
-  </p>
-</section>
-
 <section id="quality" class="section alt">
   <h2 class="title">Quality & Trust</h2>
   <div class="divider"></div>
@@ -498,28 +212,17 @@ Easy to digest<br></div>
 document.getElementById("orderForm").addEventListener("submit", function(e){
   e.preventDefault();
 
-  let name = document.getElementById("name").value;
-  let phone = document.getElementById("phone").value;
-  let product = document.getElementById("product").value;
-  let weight = document.getElementById("weight").value;
-  let qty = document.getElementById("qty").value;
-  let address = document.getElementById("address").value;
-  let note = document.getElementById("note").value;
-
   let msg =
-    `🛒 *Mushcure Order*\n\n` +
-    `👤 Name: ${name}\n` +
-    `📞 Phone: ${phone}\n\n` +
-    `🍄 Product: ${product}\n` +
-    `⚖️ Pack Size: ${weight}\n` +
-    `🔢 Quantity: ${qty}\n\n` +
-    `📍 Delivery Address:\n${address}\n\n` +
-    `📝 Notes: ${note || "None"}`;
+`🛒 *Mushcure Order*\n\n`+
+`👤 Name: ${name.value}\n`+
+`📞 Phone: ${phone.value}\n\n`+
+`🍄 Product: ${product.value}\n`+
+`⚖️ Pack Size: ${weight.value}\n`+
+`🔢 Quantity: ${qty.value}\n\n`+
+`📍 Delivery Address:\n${address.value}\n\n`+
+`📝 Notes: ${note.value || "None"}`;
 
-  window.open(
-    `https://wa.me/917568605896?text=${encodeURIComponent(msg)}`,
-    `_blank`
-  );
+  window.open(`https://wa.me/917568605896?text=${encodeURIComponent(msg)}`,"_blank");
 });
 </script>
 
