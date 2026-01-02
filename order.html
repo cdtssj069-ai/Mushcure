@@ -91,22 +91,30 @@
 document.getElementById("orderForm").addEventListener("submit", function(e){
   e.preventDefault();
 
+  const customerName = document.getElementById("name").value;
+  const phone = document.getElementById("phone").value;
+  const product = document.getElementById("product").value;
+  const weight = document.getElementById("weight").value;
+  const qty = document.getElementById("qty").value;
+  const address = document.getElementById("address").value;
+  const note = document.getElementById("note").value;
+
   const msg =
 `🛒 *Mushcure Order Request*\n\n
-👤 Name: ${name.value}
-📞 Phone: ${phone.value}
+👤 Name: ${customerName}
+📞 Phone: ${phone}
 
-🍄 Product: ${product.value}
-⚖️ Pack Size: ${weight.value}
-🔢 Quantity: ${qty.value}
+🍄 Product: ${product}
+⚖️ Pack Size: ${weight}
+🔢 Quantity: ${qty}
 
 📍 Address:
-${address.value}
+${address}
 
-📝 Notes: ${note.value || "None"}`;
+📝 Notes: ${note || "None"}`;
 
   window.open(
-    `https://wa.me/917568605896?text=${encodeURIComponent(msg)}`,
+    "https://wa.me/917568605896?text=" + encodeURIComponent(msg),
     "_blank"
   );
 });
