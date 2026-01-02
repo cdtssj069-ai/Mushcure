@@ -56,6 +56,81 @@ nav a:hover{color:#ffdf8a;}
   border-color:#ffdd88;
   box-shadow:0 0 18px rgba(255,221,136,.55),0 18px 40px rgba(0,0,0,.75);
 }
+/* TRAINING SECTION */
+.training-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:22px;
+  margin-top:16px;
+}
+
+.training-card{
+  background:#12120f;
+  border:1px solid #b1904233;
+  border-radius:18px;
+  padding:18px;
+  box-shadow:0 10px 28px rgba(0,0,0,.55);
+  transition:.3s;
+}
+
+.training-card:hover{
+  border-color:#caa24d;
+  box-shadow:0 14px 36px rgba(0,0,0,.7);
+  transform:translateY(-4px);
+}
+
+.training-card h3{
+  color:#ffdf9a;
+  margin-bottom:6px;
+}
+
+.training-card p{
+  color:#e8dfc8;
+  margin-bottom:10px;
+}
+
+.price{
+  display:inline-block;
+  padding:6px 12px;
+  border-radius:12px;
+  border:1px solid #caa24d66;
+  color:#ffe7a8;
+  background:#16140f;
+  font-weight:600;
+}
+
+.price.highlight{
+  background:#caa24d;
+  color:#111;
+}
+
+.sub-title{
+  margin-top:24px;
+  color:#ffdf9a;
+  text-align:center;
+}
+
+.benefits-list{
+  max-width:820px;
+  margin:10px auto 18px;
+  color:#e8dfc8;
+  line-height:1.6;
+}
+
+.benefits-list li{
+  margin-bottom:6px;
+}
+
+.trainer-box{
+  max-width:720px;
+  margin:12px auto 18px;
+  padding:14px;
+  border-radius:12px;
+  border:1px solid #caa24d66;
+  background:#0f0f0d;
+  color:#ffecb5;
+  text-align:center;
+}
 
 /* TRUST CARDS */
 .trust-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;}
